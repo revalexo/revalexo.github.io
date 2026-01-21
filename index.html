@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="RevalExo: A Multimodal Dataset and Benchmark for Locomotion Mode Recognition Across Healthy and Clinical Populations">
+  <meta name="keywords" content="RevalExo, Locomotion Mode Recognition, Multimodal Dataset, IMU, Egocentric Vision, Assistive Robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RevalExo: A Multimodal Dataset and Benchmark for Locomotion Mode Recognition</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">RevalExo: A Multimodal Dataset and Benchmark for Locomotion Mode Recognition Across Healthy and Clinical Populations</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Diwas Lamsal</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Juha Carlon</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Reinhard Claeys</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Maxim Yudayev</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Louis Flynn</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Tom Verstraten</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">David Beckwee</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Eva Swinnen</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Mihai Bace</a><sup>1†</sup>,</span>
+            <span class="author-block">
+              <a href="#">Bart Vanrumste</a><sup>1†</sup>,</span>
+            <span class="author-block">
+              <a href="#">Benjamin Filtjens</a><sup>3†</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>KU Leuven,</span>
+            <span class="author-block"><sup>2</sup>Vrije Universiteit Brussel,</span>
+            <span class="author-block"><sup>3</sup>Delft University of Technology</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*†</sup>Equal contribution</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (Coming Soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset (Coming Soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2 class="subtitle has-text-centered">
+        RevalExo captures multimodal locomotion data from healthy and clinical populations
+        using synchronized egocentric video and lower-body IMU recordings.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate locomotion intent prediction enables assistive devices to provide proactive support for individuals with mobility impairments. Combining inertial measurement units (IMUs), which capture body kinematics, with egocentric vision, which provides environmental context, offers a promising approach for robust prediction across diverse terrains.
+          </p>
+          <p>
+            We present RevalExo, a locomotion dataset spanning healthy and clinically relevant populations. The dataset includes synchronized egocentric video and lower-body IMU recordings from 13 participants (7 healthy older adults, 6 stroke survivors), and additional lower-body IMU-only recordings from 14 participants (4 stroke survivors, 10 sarcopenic older adults). Data were captured using Pupil Core smart glasses and seven Xsens Awinda IMUs.
+          </p>
+          <p>
+            We benchmark three challenges: (1) unimodal and multimodal locomotion mode recognition, (2) cross-population generalization, and (3) vision-guided knowledge transfer, where models exploit egocentric video during training but operate on IMU-only inputs during inference. Our benchmarks confirm the benefits of multimodal fusion while revealing challenges in transition detection, cross-population generalization, and cross-modal transfer that warrant further research.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Dataset Overview. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Dataset Overview</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            RevalExo contains <strong>10 hours</strong> of annotated data from <strong>27 participants</strong> across three cohorts, labeled with <strong>11 locomotion modes</strong>.
+          </p>
+        </div>
+
+        <div class="columns is-vcentered">
+          <div class="column is-half">
+            <img src="./static/images/setup.png" alt="Data Acquisition Setup">
+          </div>
+          <div class="column is-half">
+            <div class="content">
+              <h4>Sensors</h4>
+              <ul>
+                <li><strong>IMUs:</strong> 7 Xsens Awinda at 60 Hz (lower-body)</li>
+                <li><strong>Smart Glasses:</strong> Pupil Core at 30 fps (1280×720)</li>
+              </ul>
+              <h4 style="margin-top: 1.5rem;">Participants</h4>
+              <ul>
+                <li><strong>Healthy Older Adults:</strong> N=7 (IMU + Video)</li>
+                <li><strong>Stroke Survivors:</strong> N=10 (6 IMU+Video, 4 IMU-only)</li>
+                <li><strong>Sarcopenic Older Adults:</strong> N=10 (IMU-only)</li>
+              </ul>
+              <h4 style="margin-top: 1.5rem;">Locomotion Modes</h4>
+              <p>
+                Level Ground, Sit-to-Stand, Stand-to-Sit, Sitting, Stair Ascent, Stair Descent, Slope Ascent, Slope Descent, Grass, Uneven Ground, Carry
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Dataset Overview. -->
+
+  </div>
+</section>
+
+
+<!-- License & Terms. -->
+<section class="section" style="background: linear-gradient(to bottom, #f5f5f5, #fafafa);">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">License & Terms</h2>
+        <div class="content has-text-justified">
+          <p>
+            The RevalExo dataset is released under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)</a>.
+          </p>
+          <p>
+            You are free to share and adapt the material for non-commercial purposes, provided you give appropriate credit and indicate if changes were made.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ License & Terms. -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <div style="margin-bottom: 1.5rem;">
+            <img src="./static/images/kuleuven-logo.png" alt="KU Leuven" style="height: 50px; margin: 0 20px;">
+            <img src="./static/images/vub-logo.png" alt="VUB" style="height: 50px; margin: 0 20px;">
+          </div>
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
