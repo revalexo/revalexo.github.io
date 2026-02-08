@@ -144,13 +144,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Accurate locomotion intent prediction enables assistive devices to provide proactive support for individuals with mobility impairments. Combining inertial measurement units (IMUs), which capture body kinematics, with egocentric vision, which provides environmental context, offers a promising approach for robust prediction across diverse terrains.
+            Accurate locomotion mode recognition enables assistive devices to provide proactive support for individuals with mobility impairments. Combining inertial measurement units (IMUs), which capture body kinematics, with egocentric vision, which provides environmental context, offers a promising approach. In practice, existing public datasets for locomotion mode recognition are limited to healthy subjects, lack frame-level labels necessary for precise recognition, or feature a limited set of tasks.
           </p>
           <p>
-            We present RevalExo, a locomotion dataset spanning healthy and clinically relevant populations. The dataset includes synchronized egocentric video and lower-body IMU recordings from 13 participants (7 healthy older adults, 6 stroke survivors), and additional lower-body IMU-only recordings from 14 participants (4 stroke survivors, 10 sarcopenic older adults). Data were captured using Pupil Core smart glasses and seven Xsens Awinda IMUs.
+            We present RevalExo, a dataset spanning healthy (older adults without mobility impairments) and clinical populations (with limited mobility) for locomotion mode recognition. The dataset includes synchronized egocentric video and lower-body IMU recordings from 13 participants (7 healthy older adults, 6 stroke survivors), and additional lower-body IMU-only recordings from 14 participants (4 stroke survivors, 10 older adults with probable sarcopenia).
           </p>
           <p>
-            We benchmark three challenges: (1) unimodal and multimodal locomotion mode recognition, (2) cross-population generalization, and (3) vision-guided knowledge transfer, where models exploit egocentric video during training but operate on IMU-only inputs during inference. Our benchmarks confirm the benefits of multimodal fusion while revealing challenges in transition detection, cross-population generalization, and cross-modal transfer that warrant further research.
+            We benchmark three challenges: unimodal and multimodal locomotion mode recognition across multiple prediction horizons, cross-population generalization, and vision-guided knowledge transfer. Our benchmarks confirm the benefits of multimodal fusion while revealing a substantial gap between general recognition (~93% F1) and recognition during transitions (~71% F1), as well as challenges in cross-population generalization and cross-modal transfer. Reliable recognition during transitions is critical for real-world assistive control and warrants further research.
           </p>
         </div>
       </div>
@@ -170,7 +170,7 @@
 
         <div class="content has-text-justified">
           <p>
-            RevalExo contains <strong>10 hours</strong> of annotated data from <strong>27 participants</strong> across three cohorts, labeled with <strong>11 locomotion modes</strong>.
+            RevalExo contains <strong>10.1 hours</strong> of annotated data from <strong>27 participants</strong> across three cohorts, labeled with <strong>11 locomotion modes</strong>.
           </p>
         </div>
 
@@ -189,11 +189,11 @@
               <ul>
                 <li><strong>Healthy Older Adults:</strong> N=7 (IMU + Video)</li>
                 <li><strong>Stroke Survivors:</strong> N=10 (6 IMU+Video, 4 IMU-only)</li>
-                <li><strong>Sarcopenic Older Adults:</strong> N=10 (IMU-only)</li>
+                <li><strong>Older Adults with Probable Sarcopenia:</strong> N=10 (IMU-only)</li>
               </ul>
               <h4 style="margin-top: 1.5rem;">Locomotion Modes</h4>
               <p>
-                Level Ground, Sit-to-Stand, Stand-to-Sit, Sitting, Stair Ascent, Stair Descent, Slope Ascent, Slope Descent, Grass, Uneven Ground, Carry
+                Level Ground, Sit to Stand, Stand to Sit, Sitting, Stair Up, Stair Down, Ramp Up, Ramp Down, Grass, Uneven Ground, Carry
               </p>
             </div>
           </div>
